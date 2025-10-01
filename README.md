@@ -574,9 +574,9 @@ School of Information and Computer Science.
 
 ### 🤝 **Get in Touch:**
 
-- **📧 Email**: [Lucky Sharma](mailto:itsluckysharma001@gmail.com)
-- **💼 LinkedIn**: [Lucky Sharma](https://linkedin.com/in/luckysharma)
-- **🐙 GitHub**: [Lucky Sharma](https://github.com/luckysharma)
+- **📧 Email**: [Lucky Sharma](itsluckysharma001@gmail.com)
+- **💼 LinkedIn**: [Lucky Sharma](www.linkedin.com/in/lucky-sharma918894599977)
+- **🐙 GitHub**: [Lucky Sharma](https://github.com/itsluckysharma01)
 
 ### 🆘 **Need Help?**
 
