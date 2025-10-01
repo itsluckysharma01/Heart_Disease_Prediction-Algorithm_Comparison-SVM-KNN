@@ -1,11 +1,12 @@
 # 🫀 Heart Disease Prediction & Algorithm Comparison: SVM vs KNN
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)](https://flask.palletsprojects.com/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-Latest-green.svg)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **A comprehensive machine learning project comparing Support Vector Machine (SVM) and K-Nearest Neighbors (KNN) algorithms for predicting heart disease using the UCI Heart Disease dataset.**
+> **A comprehensive machine learning project with an interactive web application comparing Support Vector Machine (SVM) and K-Nearest Neighbors (KNN) algorithms for predicting heart disease using the UCI Heart Disease dataset.**
 
 ---
 
@@ -13,6 +14,7 @@
 
 - [🎯 Project Overview](#-project-overview)
 - [🚀 Quick Start](#-quick-start)
+- [🌐 Web Application](#-web-application)
 - [📊 Dataset Information](#-dataset-information)
 - [🔍 Exploratory Data Analysis](#-exploratory-data-analysis)
 - [🤖 Machine Learning Models](#-machine-learning-models)
@@ -29,7 +31,7 @@
 
 ## 🎯 Project Overview
 
-This project implements and compares two powerful machine learning algorithms for heart disease prediction:
+This project implements and compares two powerful machine learning algorithms for heart disease prediction with a beautiful, interactive web interface:
 
 ### 🔬 **What We Do:**
 
@@ -37,6 +39,7 @@ This project implements and compares two powerful machine learning algorithms fo
 - **Feature Engineering**: Smart handling of missing values and categorical encoding
 - **Model Comparison**: Head-to-head comparison of SVM vs KNN algorithms
 - **Visualization**: Rich data visualizations for better insights
+- **Web Application**: Interactive Flask-based web interface for real-time predictions
 - **Model Deployment**: Saved models ready for production use
 
 ### 🎯 **Objectives:**
@@ -45,22 +48,31 @@ This project implements and compares two powerful machine learning algorithms fo
 2. **Compare algorithm performance** (SVM vs KNN)
 3. **Provide insights** into key health indicators
 4. **Create reusable models** for future predictions
+5. **Offer user-friendly interface** for medical professionals
 
 ---
 
 ## 🚀 Quick Start
 
-### ⚡ Run the Project in 3 Steps:
+### ⚡ Run the Web Application in 3 Steps:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/yourusername/Heart_Disease_Prediction-Algorithm_Comparison-SVM-KNN.git
+git clone https://github.com/itsluckysharma01/Heart_Disease_Prediction-Algorithm_Comparison-SVM-KNN.git
 cd Heart_Disease_Prediction-Algorithm_Comparison-SVM-KNN
 
 # 2️⃣ Install dependencies
 pip install -r requirements.txt
 
-# 3️⃣ Launch Jupyter Notebook
+# 3️⃣ Launch the web application
+python app.py
+```
+
+Then open your browser and navigate to: **`http://localhost:5000`**
+
+### 📓 Run the Jupyter Notebook:
+
+```bash
 jupyter notebook "Heart_Disease_Prediction&Algorithm_Comparison-SVM-KNN.ipynb"
 ```
 
@@ -77,6 +89,118 @@ sample_data = [[63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1]]
 svm_prediction = svm_model.predict(sample_data)
 knn_prediction = knn_model.predict(sample_data)
 ```
+
+---
+
+## 🌐 Web Application
+
+### ✨ **Features:**
+
+- **🎨 Beautiful UI**: Modern, responsive design with smooth animations and gradients
+- **📊 Real-time Predictions**: Instant analysis using both SVM and KNN models
+- **🤖 Dual AI Analysis**: Compare predictions from both algorithms
+- **📱 Mobile Responsive**: Works perfectly on all devices
+- **🔄 Interactive Forms**: Smart validation and real-time feedback
+- **📈 Confidence Scores**: Get prediction confidence levels
+- **🎯 Agreement Analysis**: See when both models agree or disagree
+- **💡 Educational Content**: Learn about the algorithms and dataset
+- **⚡ Fast Performance**: Optimized for quick predictions
+- **🛡️ Input Validation**: Comprehensive data validation and error handling
+
+### 🚀 **Quick Start Web App:**
+
+#### **Method 1: Windows Batch Script**
+
+```cmd
+# Simply double-click or run:
+run_app.bat
+```
+
+#### **Method 2: Python Script (Cross-platform)**
+
+```bash
+# Run the setup and start script:
+python run_app.py
+```
+
+#### **Method 3: Manual Setup**
+
+```bash
+# 1. Create virtual environment
+python -m venv venv
+
+# 2. Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the application
+python app.py
+```
+
+### 🌐 **Access the Application:**
+
+Open your browser and navigate to: **http://127.0.0.1:5000**
+
+### 📋 **Using the Web Interface:**
+
+1. **📝 Fill the Form**: Enter patient medical data in the intuitive form
+2. **🔍 Validation**: The app validates your inputs in real-time
+3. **🧠 AI Analysis**: Click "Analyze with AI" to get predictions
+4. **📊 View Results**: See predictions from both SVM and KNN models
+5. **🤝 Agreement Check**: Understand when algorithms agree or disagree
+6. **🔄 New Assessment**: Reset the form for another prediction
+
+### 🎨 **Web App Screenshots:**
+
+The web application features:
+
+- **Hero Section**: Eye-catching landing page with animated heart
+- **Interactive Form**: Comprehensive medical data input with validation
+- **Results Dashboard**: Beautiful results display with confidence scores
+- **Algorithm Comparison**: Side-by-side SVM vs KNN predictions
+- **Educational Content**: Learn about the technology and dataset
+- **Responsive Design**: Perfect on desktop, tablet, and mobile
+
+### 📱 **Mobile Experience:**
+
+- Fully responsive design
+- Touch-friendly interface
+- Optimized for all screen sizes
+- Fast loading on mobile networks
+- **📈 Interactive Charts**: Radar chart visualization of health metrics
+- **🔍 Risk Analysis**: Automatic identification of risk factors
+- **💡 Smart Recommendations**: Personalized health advice based on results
+- **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- **⌨️ Keyboard Shortcuts**:
+  - `Ctrl + Enter`: Submit prediction
+  - `Ctrl + R`: Reset form
+  - `ESC`: Close results
+- **📥 Export Results**: Download predictions as JSON
+- **🖨️ Print-friendly**: Optimized for printing reports
+
+### 🎯 **How to Use the Web App:**
+
+1. **Fill in Patient Information**: Enter all medical parameters in the form
+2. **Submit for Analysis**: Click "Predict Heart Disease" button
+3. **Review Results**: Both SVM and KNN predictions are displayed
+4. **Check Risk Factors**: See identified health risk factors
+5. **Export/Print**: Save or print results for records
+
+### 🖥️ **Web Application Screenshots:**
+
+The application includes:
+
+- **Input Form**: User-friendly form with validation and helpful tooltips
+- **Prediction Results**: Color-coded risk levels (Green: No Risk, Red: High Risk)
+- **Model Comparison**: Side-by-side SVM vs KNN predictions
+- **Health Metrics Chart**: Visual representation of patient's health indicators
+- **Risk Factor Analysis**: Detailed breakdown of identified risk factors
+- **Recommendations**: Actionable health advice
 
 ---
 
@@ -210,22 +334,12 @@ pip install pandas numpy matplotlib seaborn scikit-learn joblib
 
 ### 📋 **Complete Setup:**
 
-```bash
+````bash
 # Create virtual environment
 python -m venv heart_disease_env
 source heart_disease_env/bin/activate  # On Windows: heart_disease_env\Scripts\activate
 
-# Install all dependencies
-pip install pandas==1.5.3
-pip install numpy==1.24.3
-pip install matplotlib==3.7.1
-pip install seaborn==0.12.2
-pip install scikit-learn==1.3.0
-pip install jupyter==1.0.0
-pip install joblib==1.3.1
-```
 
----
 
 ## 🛠️ Usage Guide
 
@@ -235,7 +349,7 @@ pip install joblib==1.3.1
 
 ```bash
 jupyter notebook "Heart_Disease_Prediction&Algorithm_Comparison-SVM-KNN.ipynb"
-```
+````
 
 #### 2️⃣ **Execute Cells Step-by-Step:**
 
@@ -280,27 +394,38 @@ Heart_Disease_Prediction&Algorithm_Comparison-SVM-KNN/
 ├── 📓 Heart_Disease_Prediction&Algorithm_Comparison-SVM-KNN.ipynb
 │   └── 🎯 Main analysis notebook with complete workflow
 │
-├── 🤖 heart_disease_svm_model.pkl
-│   └── 💾 Trained Support Vector Machine model
+├── 🌐 Web Application Files:
+│   ├── � app.py                     # Flask web application
+│   ├── 📁 templates/
+│   │   ├── 🏠 index.html            # Main web interface
+│   │   └── ℹ️ about.html             # About page
+│   ├── � static/
+│   │   ├── 🎨 css/style.css         # Custom styling
+│   │   └── ⚡ js/script.js           # Frontend functionality
+│   ├── 📋 requirements.txt          # Python dependencies
+│   ├── 🚀 run_app.py               # Cross-platform runner
+│   └── � run_app.bat              # Windows batch runner
 │
-├── 🤖 heart_disease_knn_model.pkl
-│   └── 💾 Trained K-Nearest Neighbors model
+├── 🤖 Trained Models:
+│   ├── 🤖 heart_disease_svm_model.pkl   # SVM classifier
+│   └── 🤖 heart_disease_knn_model.pkl   # KNN classifier
 │
-├── 📄 README.md
-│   └── 📖 Comprehensive project documentation
-│
-└── 📋 requirements.txt (recommended)
-    └── 📦 Python dependencies list
+└── 📄 README.md                    # Project documentation
 ```
 
 ### 📝 **File Descriptions:**
 
-| File                    | Purpose                   | Size   |
-| ----------------------- | ------------------------- | ------ |
-| **📓 Jupyter Notebook** | Complete ML pipeline      | ~2MB   |
-| **🤖 SVM Model**        | Serialized SVM classifier | ~50KB  |
-| **🤖 KNN Model**        | Serialized KNN classifier | ~200KB |
-| **📄 README**           | Project documentation     | ~15KB  |
+| File/Directory          | Purpose                     | Technology      |
+| ----------------------- | --------------------------- | --------------- |
+| **📓 Jupyter Notebook** | Complete ML pipeline        | Python/Jupyter  |
+| **🐍 app.py**           | Flask web server            | Flask/Python    |
+| **🏠 index.html**       | Main web interface          | HTML5/Bootstrap |
+| **ℹ️ about.html**       | Information page            | HTML5/Bootstrap |
+| **🎨 style.css**        | Custom styling              | CSS3            |
+| **⚡ script.js**        | Interactive functionality   | JavaScript      |
+| **🤖 SVM Model**        | Serialized SVM classifier   | scikit-learn    |
+| **🤖 KNN Model**        | Serialized KNN classifier   | scikit-learn    |
+| **� Runners**           | Application startup scripts | Python/Batch    |
 
 ---
 
@@ -309,16 +434,29 @@ Heart_Disease_Prediction&Algorithm_Comparison-SVM-KNN/
 ### 🐍 **Core Technologies:**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+### 🌐 **Web Technologies:**
+
+- **🐍 Flask**: Lightweight web framework
+- **🏗️ HTML5**: Modern markup language
+- **🎨 CSS3**: Advanced styling with gradients and animations
+- **⚡ JavaScript**: Interactive frontend functionality
+- **📱 Bootstrap 5**: Responsive CSS framework
+- **🎯 Font Awesome**: Beautiful icons and symbols
+- **🔄 AJAX**: Asynchronous form submission
 
 ### 📊 **Data Science Stack:**
 
 - **🔬 scikit-learn**: Machine learning algorithms
 - **📈 Matplotlib**: Static plotting library
 - **🎨 Seaborn**: Statistical data visualization
-- **💾 Joblib**: Model serialization
+- **💾 Pickle**: Model serialization
 - **🔢 NumPy**: Numerical computing
 - **📊 Pandas**: Data manipulation and analysis
 
